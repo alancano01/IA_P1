@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-container">
+            <h1 class="title">Chatbot AI</h1>
+            <div class="form-group">
+                <label for="context">Contexto</label>
+                <textarea id="context" placeholder="Proporciona un contexto para la conversación..."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="comment">Inserta tu comentario</label>
+                <textarea id="comment" placeholder="Escribe tu mensaje aquí..."></textarea>
+            </div>
+            <button id="send-button" class="pulse">Enviar</button>
+            
+            <!-- Área para mostrar mensajes guardados -->
+            <div class="saved-messages-container">
+                <h2 class="messages-title">Mensajes Anteriores</h2>
+                <div id="saved-messages" class="saved-messages">
+                    <!-- Aquí se cargarán dinámicamente los mensajes desde la BD -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="animation.js"></script>
+</body>
+</html>
